@@ -33,8 +33,11 @@
 Клонировать репозиторий курса:
 
 - Выбираете папку в которую вам нужно скопировать репозиторий.
-- это можно сделать командой 
--git clone https://github.com/мой-репозиторий 
-- https://github.com/NemirovskyMax/Practice.git Вот моя ссылка на репозиторий
-- пишите git clone https://github.com/NemirovskyMax/Practice.git
+- это можно сделать командой
+- cd путь/до/папки
+- В моем случае /c/Python
+- Если у вас название папки больше одного слова вам нужно взятьв кавычки cd "/c/Python practic"
+- Затем пишем git clone https://github.com/NemirovskyMax/Practice.git на мой репозиторий.
+
+И все у вас теперь заходи в VS Code и там ищем эту папку.
 
