@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 10px;
+}
+
+/* ОБЩЕЕ ДЛЯ ПОДПИСЕЙ */
+header,
+main,
+nav,
+section,
+aside,
+footer,
+h1,
+section p {
+	position: relative;
+}
+
+/* HEADER */
+header {
+	border: 2px solid #4a90e2;
+	background: rgba(74, 144, 226, 0.08);
+	padding: 20px 10px 10px;
+	margin-bottom: 10px;
+}
+
+header::before {
+	content: "header";
+	color: #4a90e2;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* H1 */
+header h1 {
+	border: 2px solid #ff8c00;
+	background: rgba(255, 140, 0, 0.15);
+	padding: 10px;
+	margin: 0;
+}
+
+header h1::before {
+	content: "h1";
+	color: #ff8c00;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* MAIN */
+main {
+	border: 2px solid #4a90e2;
+	background: rgba(74, 144, 226, 0.08);
+	padding: 20px 10px 10px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+main::before {
+	content: "main";
+	color: #4a90e2;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* NAV */
+nav {
+	border: 2px solid #a64cff;
+	background: rgba(166, 76, 255, 0.10);
+	padding: 20px 10px 10px;
+}
+
+nav::before {
+	content: "nav";
+	color: #4a90e2;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* SECTION */
+section {
+	border: 2px solid #a64cff;
+	background: rgba(166, 76, 255, 0.10);
+	padding: 20px 10px 10px;
+	display: flex;
+	gap: 10px;
+}
+
+section::before {
+	content: "section";
+	color: #a64cff;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* P */
+section p {
+	border: 2px solid #ff4fd8;
+	background: rgba(255, 79, 216, 0.08);
+	padding: 20px 10px 10px;
+	margin: 0;
+	flex: 1;
+	text-align: center;
+}
+
+section p::before {
+	content: "p";
+	color: #ff4fd8;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* ASIDE */
+aside {
+	border: 2px solid #a64cff;
+	background: rgba(166, 76, 255, 0.10);
+	padding: 20px 10px 10px;
+	grid-row: span 2;
+}
+
+aside::before {
+	content: "aside";
+	color: #4a90e2;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+	border: 2px solid #4a90e2;
+	background: rgba(74, 144, 226, 0.08);
+	padding: 20px 10px 10px;
+}
+
+footer::before {
+	content: "footer";
+	color: #8fd3ff;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	padding: 0 5px;
+	font-size: 12px;
+}
+
+main nav,
+header h1,
+main aside,
+footer {
+	text-align: center;
+}
