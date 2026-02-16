@@ -1,0 +1,40 @@
+body {
+	background: linear-gradient(120deg, #0d0d0d, #1a0a2b);
+	color: #ff00ff;
+	font-family: 'Courier New', monospace;
+}
+
+h1,
+p {
+	text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+}
+
+h2 {
+	color: #00ffff;
+	text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+h3 {
+	color: #39ff14;
+	text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+}
+
+li {
+	color: #a64cff;
+	text-shadow: 0 0 5px #a64cff, 0 0 10px #a64cff, 0 0 20px #a64cff;
+}
+
+span {
+	color: #ff8c00;
+	text-shadow: 0 0 5px #ff8c00, 0 0 10px #ff8c00, 0 0 20px #ff8c00;
+}
+
+div {
+	color: #ffff00;
+	text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00, 0 0 20px #ffff00;
+}
+
+blockquote {
+	color: red;
+	text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+}
