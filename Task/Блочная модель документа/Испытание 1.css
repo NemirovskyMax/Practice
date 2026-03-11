@@ -1,0 +1,21 @@
+.container {
+	padding: 20px;
+	background-color: #0D3B66;
+	font-family: "Arial", sans-serif;
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.block {
+	background-color: #e0f0f5;
+}
+
+/*! Первый блок с box-sizing: border-box; */
+.block-1 {}
+
+/*! Второй блок без box-sizing для наглядности */
+.block-2 {}
+
+/*! Третий блок чтобы было видно различия */
+.block-3 {}

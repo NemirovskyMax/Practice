@@ -1,0 +1,40 @@
+.container {
+	padding: 20px;
+	background-color: #0D3B66;
+	font-family: "Arial", sans-serif;
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.block {
+	background-color: #e0f0f5;
+}
+
+/*! Первый блок с box-sizing: border-box; */
+.block-1 {
+	width: 180px;
+	height: 40px;
+	padding: 5px;
+	margin: 20px 0 0 15px;
+	border: 2px solid red;
+	box-sizing: border-box;
+}
+
+/*! Второй блок без box-sizing для наглядности */
+.block-2 {
+	width: 180px;
+	height: 40px;
+	padding: 5px;
+	margin: 20px 0 0 15px;
+	border: 2px solid red;
+}
+
+/*! Третий блок чтобы было видно различия */
+.block-3 {
+	width: 160px;
+	height: 80px;
+	margin: 60px 0 0 60px;
+	padding: 10px;
+	border: 5px solid red;
+}
