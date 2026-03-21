@@ -12,10 +12,16 @@
 }
 
 /*! Первый блок с box-sizing: border-box; */
-.block-1 {}
+.block-1 {
+	width: 200px;
+}
 
 /*! Второй блок без box-sizing для наглядности */
-.block-2 {}
+.block-2 {
+	width: 100px;
+}
 
 /*! Третий блок чтобы было видно различия */
-.block-3 {}
+.block-3 {
+	width: 100px;
+}
