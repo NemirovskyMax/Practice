@@ -1,0 +1,45 @@
+/*! Это трогать ненадо */
+body {
+	background: linear-gradient(135deg, #0f172a, #1e293b);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial, sans-serif;
+}
+
+/*! Работаем с block-1 */
+.card {
+	width: 320px;
+	background: #111827;
+	border-radius: 12px;
+}
+
+/*! Работаем с block-1 */
+.inner {
+	background: #1f2937;
+	border-radius: 8px;
+}
+
+/*! Добавить то, чтобы элемент не вылезал за границу*/
+input[type="text"] {
+	background: #020617;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	/*! Добавьте ниже */
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+/*! добавьте рамку */
+.block-1 {
+	border: 2px solid white;
+}
+
+/*! Добавьте отступы внешнее и внутрение */
+.block-2 {
+	padding: 20px;
+	margin: 20px;
+}
