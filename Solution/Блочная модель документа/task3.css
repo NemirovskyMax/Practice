@@ -1,0 +1,76 @@
+/* Общий фон страницы */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+	color: white;
+	padding: 30px;
+}
+
+/* Колонки */
+.column {
+	margin: 10px;
+	padding: 15px;
+
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+
+	backdrop-filter: blur(10px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+	font-weight: bold;
+}
+
+/* Таблица */
+.table {
+	margin: 30px 0;
+	border-collapse: collapse;
+
+	background: rgba(255, 255, 255, 0.08);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+/* Ячейка */
+.cell {
+	padding: 12px 16px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Первая колонка таблицы жирнее */
+.col-1 {
+	font-weight: bold;
+}
+
+/* Ховер эффект */
+.cell:hover,
+.column:hover {
+	background: rgba(255, 255, 255, 0.15);
+	transition: 0.3s;
+}
+
+/*! Все что выше, мы не трогаем */
+
+.column{
+	display: inline-block;
+	width: 80px;
+	vertical-align: middle;
+}
+
+.table{
+	display: table;
+	border-collapse: collapse;
+}
+
+.row{
+	display: table-row;
+}
+
+.cell{
+	display: table-cell;
+	width: 100px;
+}
+
+.col-3{
+	display: none;
+}
