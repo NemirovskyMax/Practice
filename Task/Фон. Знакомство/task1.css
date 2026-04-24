@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(circle at top, #2f1b70, #120a35 45%, #05010f 80%);
+	font-family: Arial, sans-serif;
+}
+
+.space-board {
+	display: grid;
+	grid-template-columns: repeat(3, 140px);
+	grid-template-rows: repeat(3, 140px);
+	gap: 2px;
+	padding: 10px;
+	background: #ffffff22;
+	border: 1px solid #6ae8ff55;
+	box-shadow: 0 0 20px rgba(90, 140, 255, 0.35), 0 0 60px rgba(80, 0, 255, 0, 2);
+}
+
+.block {
+	width: 140px;
+	height: 140px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*! ВСЕ ЧТО ВЫШЕ НЕ ТРОГАТЬ  */
+
+.block1 {}
+
+.block2 {}
+
+.block3 {}
+
+.block4 {}
+
+.block5 {}
+
+.block6 {}
+
+.block7 {}
+
+.block8 {}
+
+.block9 {}

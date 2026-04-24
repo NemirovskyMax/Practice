@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(circle at top, #2f1b70, #120a35 45%, #05010f 80%);
+	font-family: Arial, sans-serif;
+}
+
+.space-board {
+	display: grid;
+	grid-template-columns: repeat(3, 140px);
+	grid-template-rows: repeat(3, 140px);
+	gap: 2px;
+	padding: 10px;
+	background: #ffffff22;
+	border: 1px solid #6ae8ff55;
+	box-shadow: 0 0 20px rgba(90, 140, 255, 0.35), 0 0 60px rgba(80, 0, 255, 0, 2);
+}
+
+.block {
+	width: 140px;
+	height: 140px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.block1 {
+	background-color: #0ea5ff;
+	background-image: url("https://img.icons8.com/ios-filled/50/ffffff/lightning-bolt.png");
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+	background-size: 40px;
+}
+
+.block2 {
+	background-color: #ff7b00;
+
+}
+
+.block3 {
+	background-color: #7a00ff;
+}
+
+.block4 {
+	background-color: #3a47d5;
+	background-image: url("https://img.icons8.com/ios-filled/100/ffffff/planet.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60px;
+}
+
+.block5 {
+	background-color: #150050;
+}
+
+.block6 {
+	background-color: #ff5e62;
+	background-image: url("https://img.icons8.com/ios-filled/100/ffffff/rocket.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60px;
+}
+
+.block7 {
+	background-color: #16222a;
+}
+
+.block8 {
+	background-color: #00f5a0;
+	background-image: url("https://img.icons8.com/ios-filled/250/ffffff/astronaut.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 280px 140px;
+}
+
+.block9 {
+	background-color: #e100ff;
+	background-image: url("https://img.icons8.com/ios-filled/250/ffffff/astronaut.png");
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 280px 140px;
+}
