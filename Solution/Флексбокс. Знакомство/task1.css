@@ -1,0 +1,105 @@
+/*! ========================================================================== */
+/*! 🚫 ЧАСТЬ 1: СТИЛИ АРЕНЫ (ЭТОТ БЛОК УЧЕНИКАМ ТРОГАТЬ НЕЛЬЗЯ) */
+/*! ========================================================================== */
+
+/* Универсальный сброс для правильного расчета размеров */
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #0f0f1a;
+	color: white;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.title {
+	font-size: 40px;
+	color: #7c5cff;
+	margin-bottom: 5px;
+	text-shadow: 0 0 10px rgba(124, 92, 255, 0.5);
+}
+
+.subtitle {
+	opacity: 0.7;
+	margin-bottom: 40px;
+}
+
+/* Оболочка полигона дронов */
+.drone-bay {
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+	background: #1c1c2e;
+	border: 2px dashed #444;
+	border-radius: 20px;
+	padding: 20px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Общие базовые стили для всех дронов */
+.drone {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Неоновая подсветка и дефолтные цвета дронов */
+.drone-green {
+	background: #2ecc71;
+	box-shadow: 0 0 15px #2ecc71;
+}
+
+.drone-yellow {
+	background: #f1c40f;
+	box-shadow: 0 0 15px #f1c40f;
+}
+
+.drone-purple {
+	background: #9b59b6;
+	box-shadow: 0 0 15px #9b59b6;
+}
+
+.drone-cyan {
+	background: #3498db;
+	box-shadow: 0 0 15px #3498db;
+}
+
+
+/* ! ========================================================================== */
+/*! 🛠 ЧАСТЬ 2: МЕСТО ДЛЯ ИСПРАВЛЕНИЯ ГЛИТЧА (КОД УЧЕНИКА) */
+/*! Ниже этой линии ученики пишут свойства, чтобы расставить дронов по местам */
+/*! ========================================================================== */
+
+/* 1. Включаем Flexbox в контейнере и настраиваем главную ось */
+.drone-bay {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+}
+
+/* 2. Управляем позицией каждого дрона по отдельности на поперечной оси */
+.drone-yellow {
+	align-self: flex-start;
+}
+
+.drone-purple {
+	align-self: center;
+}
+
+.drone-cyan {
+	align-self: flex-end;
+}
