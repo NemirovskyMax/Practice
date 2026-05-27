@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+	font-family: 'DM Mono', monospace;
+}
+
+.palette {
+	width: 390px;
+	height: 200px;
+	background: rgba(255, 255, 255, 0.04);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	padding: 16px;
+	backdrop-filter: blur(10px);
+	box-shadow:
+		0 0 0 1px rgba(255, 255, 255, 0.05),
+		0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.palette div {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Syne', sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	color: #fff;
+	flex-shrink: 0;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease;
+}
+
+.palette div:hover {
+	transform: scale(1.1);
+}
+
+/* Цвета кружков */
+.color-1 {
+	background: #1a1a2e;
+	border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.color-2 {
+	background: #48cae4;
+}
+
+.color-3 {
+	background: #2dc653;
+}
+
+.color-4 {
+	background: #f4c542;
+}
+
+.color-5 {
+	background: #c77dff;
+}
+
+.color-6 {
+	background: #e63946;
+}
+
+.color-7 {
+	background: #ff6b35;
+}
