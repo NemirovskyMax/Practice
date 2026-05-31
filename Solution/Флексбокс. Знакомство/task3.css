@@ -1,0 +1,55 @@
+/*! ============================================ */
+/*! task3.css — здесь пишем решение */
+/*! ============================================ */
+
+/* ——— Секция 1: Оружие ——— */
+/* Все предметы в один ряд, равномерно по краям */
+.item-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ——— Секция 2: Зелья ——— */
+/* Зелья переносятся, редкое зелье всегда первым */
+.potions-row {
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.potion-legend {
+	order: -1;
+}
+
+.potion-rare {
+	order: -1;
+	align-self: flex-end;
+}
+
+/* ——— Секция 3: Броня ——— */
+/* Вложенный flex — колонка из трёх рядов */
+.armor-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Верхний ряд — шлем по центру */
+.top-row {
+	display: flex;
+	justify-content: center;
+}
+
+/* Средний ряд — перчатка, нагрудник, щит */
+.mid-row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+/* Нижний ряд — сапоги по центру */
+.bot-row {
+	display: flex;
+	justify-content: center;
+}

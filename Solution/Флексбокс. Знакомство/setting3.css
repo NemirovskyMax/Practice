@@ -1,0 +1,131 @@
+/*! ============================================ */
+/*! setting3.css — базовые стили (не менять!) */
+/*! ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel:wght@400;700&family=IM+Fell+English&display=swap');
+
+:root {
+	--bg-dark: #0d0a05;
+	--bg-panel: #1a1208;
+	--border: #6b4c1e;
+	--border-glow: #c9922a;
+	--gold: #f0c040;
+	--text: #e8d5a3;
+	--text-dim: #7a6540;
+	--slot-bg: #120e06;
+	--slot-hover: #221a0a;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background:
+		radial-gradient(ellipse at 20% 50%, #1a0f00 0%, transparent 60%),
+		radial-gradient(ellipse at 80% 20%, #0f1a00 0%, transparent 60%),
+		#0d0a05;
+	font-family: 'IM Fell English', serif;
+	padding: 40px 20px;
+	color: var(--text);
+}
+
+/* Секции */
+.inventory-section {
+	max-width: 700px;
+	margin: 0 auto 32px;
+	background: var(--bg-panel);
+	border: 2px solid var(--border);
+	border-radius: 8px;
+	padding: 20px 24px;
+	box-shadow:
+		0 0 0 1px #000,
+		inset 0 1px 0 rgba(201, 146, 42, 0.15),
+		0 8px 32px rgba(0, 0, 0, 0.6);
+	position: relative;
+}
+
+.inventory-section::before {
+	content: '';
+	position: absolute;
+	inset: 3px;
+	border: 1px solid rgba(201, 146, 42, 0.1);
+	border-radius: 6px;
+	pointer-events: none;
+}
+
+.section-title {
+	font-family: 'Cinzel', serif;
+	font-size: 13px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--gold);
+	margin-bottom: 16px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--border);
+	text-shadow: 0 0 12px rgba(240, 192, 64, 0.4);
+}
+
+/* Слоты предметов */
+.item {
+	width: 64px;
+	height: 64px;
+	background: var(--slot-bg);
+	border: 2px solid var(--border);
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	flex-shrink: 0;
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.03),
+		0 2px 8px rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+
+.item:hover {
+	border-color: var(--border-glow);
+	background: var(--slot-hover);
+	transform: translateY(-2px);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.05),
+		0 0 12px rgba(201, 146, 42, 0.3),
+		0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Редкость предметов */
+.potion-rare {
+	border-color: #7b2d8b;
+}
+
+.potion-legend {
+	border-color: #c9922a;
+	box-shadow: inset 0 0 8px rgba(201, 146, 42, 0.15);
+}
+
+.staff {
+	border-color: #2d5a8b;
+}
+
+/* Отступы между предметами через margin */
+.item {
+	margin: 4px;
+}
+
+/* Отступы между рядами брони */
+.armor-row {
+	margin-bottom: 8px;
+}
+
+/* Зелья чуть меньше */
+.potions-row .item {
+	width: 52px;
+	height: 52px;
+	font-size: 22px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Испытание: Инвентарь героя</title>
+	<link rel="stylesheet" href="setting3.css">
+	<link rel="stylesheet" href="task3.css">
+</head>
+
+<body>
+	<!-- Секция 1: Панель оружия (горизонтальный ряд, space-between) -->
+	<section class="inventory-section" id="weapons">
+		<h2 class="section-title">⚔️ Оружие</h2>
+		<div class="item-row">
+			<div class="item sword">🗡️</div>
+			<div class="item axe">🪓</div>
+			<div class="item bow">🏹</div>
+			<div class="item staff">🪄</div>
+		</div>
+	</section>
+
+	<!-- Секция 2: Зелья (flex-wrap + order) -->
+	<section class="inventory-section" id="potions">
+		<h2 class="section-title">🧪 Зелья</h2>
+		<div class="item-row potions-row">
+			<div class="item potion-health">❤️</div>
+			<div class="item potion-mana">💙</div>
+			<div class="item potion-poison">💚</div>
+			<div class="item potion-speed">💛</div>
+			<div class="item potion-rare">💜</div>
+			<div class="item potion-legend">🔴</div>
+		</div>
+	</section>
+
+	<!-- Секция 3: Броня (вложенный flex — строки и колонки) -->
+	<section class="inventory-section" id="armor">
+		<h2 class="section-title">🛡️ Броня</h2>
+		<div class="armor-grid">
+			<div class="armor-row top-row">
+				<div class="item helmet">⛑️</div>
+			</div>
+			<div class="armor-row mid-row">
+				<div class="item glove">🧤</div>
+				<div class="item chest">🦺</div>
+				<div class="item shield">🛡️</div>
+			</div>
+			<div class="armor-row bot-row">
+				<div class="item boots">👢</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
