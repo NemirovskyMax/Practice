@@ -1,0 +1,221 @@
+/*! ============================================ */
+/*! setting6.css — базовые стили (не менять!) */
+/*! ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=IM+Fell+English:ital@0;1&display=swap');
+
+:root {
+	--bg: #0e0900;
+	--panel: #1a1005;
+	--border: #5c3d10;
+	--border-dim: #3a2508;
+	--glow: #c87830;
+	--text: #c8a96e;
+	--text-dim: #5c3d10;
+	--slot-bg: #120b02;
+	--slot-hover: #1f1208;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background:
+		radial-gradient(ellipse at 50% 0%, rgba(150, 80, 10, 0.15) 0%, transparent 60%),
+		radial-gradient(ellipse at 20% 100%, rgba(80, 40, 5, 0.2) 0%, transparent 50%),
+		#0e0900;
+	font-family: 'IM Fell English', serif;
+	padding: 36px 20px;
+	color: var(--text);
+}
+
+.house-section {
+	max-width: 700px;
+	margin: 0 auto 28px;
+	background: var(--panel);
+	border: 1px solid var(--border);
+	border-radius: 2px;
+	padding: 20px 24px;
+	box-shadow:
+		0 0 0 3px var(--border-dim),
+		0 0 40px rgba(180, 100, 20, 0.08),
+		inset 0 1px 0 rgba(200, 120, 48, 0.1),
+		0 8px 32px rgba(0, 0, 0, 0.8);
+	position: relative;
+}
+
+.house-section::before {
+	content: '✦';
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	color: var(--border);
+	font-size: 10px;
+}
+
+.house-section::after {
+	content: '✦';
+	position: absolute;
+	top: 6px;
+	right: 10px;
+	color: var(--border);
+	font-size: 10px;
+}
+
+.section-title {
+	font-family: 'IM Fell English', serif;
+	font-style: italic;
+	font-size: 15px;
+	letter-spacing: 2px;
+	color: var(--glow);
+	margin-bottom: 16px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--border-dim);
+	text-shadow: 0 0 16px rgba(200, 120, 48, 0.5);
+}
+
+.ghost,
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--slot-bg);
+	border: 1px solid var(--border-dim);
+	border-radius: 2px;
+	flex-shrink: 0;
+	transition: all 0.25s ease;
+	cursor: pointer;
+}
+
+.ghost:hover,
+.item:hover {
+	border-color: var(--glow);
+	box-shadow: 0 0 12px rgba(200, 120, 48, 0.25);
+	transform: translateY(-2px);
+}
+
+/*! Привидения — чердак */
+
+.ghost {
+	font-size: 22px;
+	margin: 5px;
+}
+
+.big-ghost {
+	width: 70px;
+	height: 70px;
+	font-size: 32px;
+}
+
+.small-ghost {
+	width: 44px;
+	height: 44px;
+}
+
+.tiny-ghost {
+	width: 34px;
+	height: 34px;
+	font-size: 16px;
+}
+
+.rare-ghost {
+	width: 54px;
+	height: 54px;
+	border-color: var(--border);
+}
+
+.evil-ghost {
+	width: 60px;
+	height: 60px;
+	font-size: 28px;
+	border-color: #5c1010;
+}
+
+/*! Предметы — зал */
+
+.candle {
+	width: 44px;
+	height: 70px;
+	font-size: 28px;
+}
+
+.portrait {
+	width: 90px;
+	height: 70px;
+	font-size: 36px;
+}
+
+.cauldron {
+	width: 60px;
+	height: 60px;
+	font-size: 28px;
+}
+
+.skull {
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+}
+
+/*! Подвал */
+
+.potion-r,
+.potion-g,
+.potion-b {
+	width: 44px;
+	height: 54px;
+	font-size: 24px;
+}
+
+.coffin-small {
+	width: 54px;
+	height: 80px;
+	font-size: 30px;
+}
+
+.coffin-big {
+	width: 70px;
+	height: 100px;
+	font-size: 38px;
+	border-color: var(--border);
+}
+
+.rat {
+	width: 50px;
+	height: 44px;
+	font-size: 24px;
+}
+
+.spider {
+	width: 44px;
+	height: 44px;
+	font-size: 22px;
+}
+
+/*! Контейнеры */
+
+.attic-row,
+.hall-row,
+.basement,
+.basement-row {
+	width: 100%;
+}
+
+.basement {
+	min-height: 240px;
+}
+
+.shelf-top .item {
+	margin: 4px;
+}
+
+.coffins .item {
+	margin: 4px;
+}
+
+.shelf-bot .item {
+	margin: 4px;
+}

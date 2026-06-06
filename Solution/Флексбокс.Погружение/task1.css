@@ -1,0 +1,88 @@
+/* ! ============================================
+/*! task6.css — здесь пишем решение */
+/*! ============================================ */
+
+/*! ——— Секция 1: Чердак ——— */
+.attic-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.evil-ghost {
+	order: -1;
+	margin-right: auto;
+}
+
+.rare-ghost {
+	order: 10;
+	margin-left: auto;
+	align-self: flex-start;
+}
+
+.big-ghost {
+	align-self: center;
+	margin: auto;
+}
+
+/*! ——— Секция 2: Парадный зал ——— */
+
+.hall-row {
+	display: flex;
+	align-items: flex-end;
+}
+
+.portrait {
+	margin: auto;
+	align-self: center;
+}
+
+.cauldron {
+	margin-left: auto;
+	align-self: flex-end;
+}
+
+.skull {
+	align-self: flex-start;
+}
+
+/*! ——— Секция 3: Подвал ——— */
+
+.basement {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.shelf-top {
+	display: flex;
+	justify-content: center;
+	height: 90px;
+}
+
+.potion-r {
+	flex-basis: 36px;
+	align-self: flex-end;
+}
+
+.potion-g {
+	flex-basis: 54px;
+	align-self: flex-start;
+}
+
+.potion-b {
+	flex-basis: 44px;
+	align-self: center;
+}
+
+.coffins {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.shelf-bot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
