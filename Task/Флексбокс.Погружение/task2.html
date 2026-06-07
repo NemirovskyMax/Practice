@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Испытание: Backrooms</title>
+	<link href="setting2.css" rel="stylesheet">
+	<link href="task2.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1 class="main-title">YOU HAVE CLIPPED THROUGH THE WALL</h1>
+	<p class="main-desc">Уровень 0. Бесконечные коридоры. Запах влажного ковра. Мигающий свет. Ты один.</p>
+	<p class="main-desc-2">Восстанови секции коридора — иначе выхода нет...</p>
+
+	<!-- Секция 1: flex-grow — секции коридора растягиваются -->
+	<section class="room-section">
+		<h2 class="section-title">// УРОВЕНЬ 0 — КОРИДОР РАСШИРЯЕТСЯ (flex-grow)</h2>
+		<div class="corridor top-corridor">
+			<div class="section sec-1">🚪</div>
+			<div class="section sec-2">💡</div>
+			<div class="section sec-3">🪑</div>
+		</div>
+	</section>
+
+	<!-- Секция 2: flex-shrink — секции сжимаются чтобы влезть -->
+	<section class="room-section">
+		<h2 class="section-title">// УРОВЕНЬ 1 — КОРИДОР СУЖАЕТСЯ (flex-shrink)</h2>
+		<div class="corridor bot-corridor">
+			<div class="section sec-4">😨</div>
+			<div class="section sec-5">👁️</div>
+			<div class="section sec-6">🏃</div>
+		</div>
+	</section>
+
+	<!-- Кнопка -->
+	<div class="btn-wrap">
+		<button class="scream-btn" id="screamBtn">
+			[ НАЖМИ ЧТОБЫ НАЙТИ ВЫХОД ]
+		</button>
+		<p class="btn-hint">не нажимай</p>
+	</div>
+
+	<!-- Скример -->
+	<div class="screamer" id="screamer">
+		<div class="spider-wrap"><img src="/Practice/Practice/images/foni-papik-pro-h6n3-p-kartinki-skrimer-na-prozrachnom-fone-2.png" alt=""></div>
+		<p class="scream-text">NO EXIT</p>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
