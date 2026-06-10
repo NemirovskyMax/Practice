@@ -1,0 +1,25 @@
+/*! ============================================ */
+/*! task9.css — здесь пишем решение */
+/*! ============================================ */
+
+.reef-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.zone-1 .cell:nth-child(even) {
+	flex-grow: 1;
+}
+
+.zone-2 .cell {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.zone-3 .cell {
+	flex-grow: 1;
+}
+
+.deep-4 {
+	flex-shrink: 0;
+}

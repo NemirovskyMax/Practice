@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Испытание: Подводный мир</title>
+	<link href="setting3.css" rel="stylesheet">
+	<link href="task3.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<h1 class="main-title">🌊 ГЛУБОКОВОДНАЯ СТАНЦИЯ</h1>
+	<p class="main-desc">Система мониторинга повреждена. Восстанови карту морских зон.</p>
+
+	<!-- Зона 1: Мелководье — рыбки (flex-wrap + flex-grow на чётных) -->
+	<section class="ocean-section">
+		<h2 class="section-title">🐠 Зона 1 — Мелководье</h2>
+		<div class="reef-grid zone-1">
+			<div class="cell fish-1">🐠</div>
+			<div class="cell fish-2">🐟</div>
+			<div class="cell fish-3">🐡</div>
+			<div class="cell fish-4">🦈</div>
+			<div class="cell fish-5">🐙</div>
+			<div class="cell fish-6">🦑</div>
+		</div>
+	</section>
+
+	<!-- Зона 2: Рифы — кораллы (flex-wrap + flex-basis разный + flex-grow) -->
+	<section class="ocean-section">
+		<h2 class="section-title">🪸 Зона 2 — Коралловый риф</h2>
+		<div class="reef-grid zone-2">
+			<div class="cell coral-1">🪸</div>
+			<div class="cell coral-2">🌿</div>
+			<div class="cell coral-3">🪸</div>
+			<div class="cell coral-4">⭐</div>
+			<div class="cell coral-5">🦀</div>
+			<div class="cell coral-6">🐚</div>
+		</div>
+	</section>
+
+	<!-- Зона 3: Глубины — существа (flex-wrap + flex-basis 100% на некоторых) -->
+	<section class="ocean-section">
+		<h2 class="section-title">🦑 Зона 3 — Тёмные глубины</h2>
+		<div class="reef-grid zone-3">
+			<div class="cell deep-1">🦑</div>
+			<div class="cell deep-2">🐋</div>
+			<div class="cell deep-3">🦈</div>
+			<div class="cell deep-4">💀</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
